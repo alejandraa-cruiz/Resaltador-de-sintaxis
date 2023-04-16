@@ -1,0 +1,22 @@
+.string{
+    color:white
+}
+
+.number{
+    color:rgb(234, 152, 255)
+}
+.keyword{
+    color:rgb(213, 255, 165)
+}
+
+.operator{
+    color: rgb(194, 246, 255)
+}
+
+.delimiter{
+    color: rgb(255, 239, 91)
+}
+
+.comment{
+    color:rgb(185, 184, 184)
+}
