@@ -36,10 +36,12 @@
   (list "auto|const|double|int|float|short|struct|unsigned|break|continue|else|for|long|
    signed|switch|void|case|default|enum|goto|register|sizeof|typedef|volatile|char|do|extern|if|return|static|
    union|while|asm|dynamic_cast|namespace|reinterpret_cast|try|bool|explicit|new|static_cast|typeid|catch|false|
-   operator|template|typename|class|friend|private|this|using|const_cast|inline|public|throw|virtual|delete|
-   mutable|protected|true|wchar_t|string|" "reserved" )
+   operator|template|typename|class|friend|string|private|this|using|const_cast|inline|public|throw|virtual|delete|
+   mutable|protected|true|wchar_t" "reserved" )
   (list "[a-zA-Z][a-zA-Z0-9_]*"  "variable" )
-  (list "[\\-|\\+|\\^|\\=|\\/|\\*]"  "opertator" )))
+  (list "[\\-|\\+|\\^|\\=|\\/|\\*]"  "operator" )
+   )
+  )
 
 ;;executes function classify-line to all elements in the list
 (define (clasify-code-by-line code-by-line)
@@ -123,6 +125,6 @@
   (displayln "</body></html>" output))
 
 
-
+(main (map pack(clasify-code-by-line (code->lines code))))
 
 

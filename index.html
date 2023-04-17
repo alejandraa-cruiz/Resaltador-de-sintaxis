@@ -1,398 +1,266 @@
 <!DOCTYPE html> <html> <head><link rel='stylesheet' href='./colors.css' type='text/css' /></head><body>
 <span class="reserved">using</span>
 <span class="space"> </span>
-<span class="reserved"> System</span>
+<span class="variable">System</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
-<span class="reserved"></span>
 <br>
 <span class="reserved">namespace</span>
 <span class="space"> </span>
-<span class="reserved"> BankSystem </span>
+<span class="variable">BankSystem</span>
 <br>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">    </span>
 <span class="reserved">class</span>
 <span class="space"> </span>
-<span class="reserved"> BankAccount </span>
+<span class="variable">BankAccount</span>
 <br>
 <span class="space">    </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="reserved">public</span>
 <span class="space"> </span>
 <span class="reserved">string</span>
 <span class="space"> </span>
-<span class="reserved"> accountNumber</span>
+<span class="variable">accountNumber</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="reserved">private</span>
 <span class="space"> </span>
 <span class="reserved">string</span>
 <span class="space"> </span>
-<span class="reserved"> accountHolder</span>
+<span class="variable">accountHolder</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="reserved">private</span>
 <span class="space"> </span>
 <span class="reserved">double</span>
 <span class="space"> </span>
-<span class="reserved"> balance</span>
+<span class="variable">balance</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="reserved">public</span>
 <span class="space"> </span>
-<span class="reserved"> BankAccount</span>
+<span class="variable">BankAccount</span>
 <span class="delimiter">(</span>
 <span class="reserved">string</span>
 <span class="space"> </span>
-<span class="reserved"> accountNumber</span>
+<span class="variable">accountNumber</span>
 <span class="delimiter">,</span>
 <span class="space"> </span>
 <span class="reserved">string</span>
 <span class="space"> </span>
-<span class="reserved"> accountHolder</span>
+<span class="variable">accountHolder</span>
 <span class="delimiter">,</span>
 <span class="space"> </span>
 <span class="reserved">double</span>
 <span class="space"> </span>
-<span class="reserved"> balance</span>
+<span class="variable">balance</span>
 <span class="delimiter">)</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="reserved">this</span>
 <span class="delimiter">.</span>
-<span class="reserved"> accountNumber</span>
+<span class="variable">accountNumber</span>
 <span class="space"> </span>
-<span class="reserved"> =</span>
+<span class="operator">=</span>
 <span class="space"> </span>
-<span class="reserved"> accountNumber</span>
+<span class="variable">accountNumber</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="reserved">this</span>
 <span class="delimiter">.</span>
-<span class="reserved"> accountHolder</span>
+<span class="variable">accountHolder</span>
 <span class="space"> </span>
-<span class="reserved"> =</span>
+<span class="operator">=</span>
 <span class="space"> </span>
-<span class="reserved"> accountHolder</span>
+<span class="variable">accountHolder</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="reserved">this</span>
 <span class="delimiter">.</span>
-<span class="reserved"> balance</span>
+<span class="variable">balance</span>
 <span class="space"> </span>
-<span class="reserved"> =</span>
+<span class="operator">=</span>
 <span class="space"> </span>
-<span class="reserved"> balance</span>
+<span class="variable">balance</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="delimiter">}</span>
-<span class="reserved"></span>
 <br>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="reserved">public</span>
 <span class="space"> </span>
 <span class="reserved">void</span>
 <span class="space"> </span>
-<span class="reserved"> Deposit</span>
+<span class="variable">Deposit</span>
 <span class="delimiter">(</span>
 <span class="reserved">double</span>
 <span class="space"> </span>
-<span class="reserved"> amount</span>
+<span class="variable">amount</span>
 <span class="delimiter">)</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="reserved">if</span>
 <span class="space"> </span>
 <span class="delimiter">(</span>
-<span class="reserved"> amount</span>
+<span class="variable">amount</span>
 <span class="space"> </span>
 <span class="delimiter">></span>
 <span class="space"> </span>
 <span class="int">0</span>
 <span class="delimiter">)</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">                </span>
-<span class="reserved"> balance</span>
+<span class="variable">balance</span>
 <span class="space"> </span>
-<span class="reserved"> +  =</span>
+<span class="operator">+ =</span>
 <span class="space"> </span>
-<span class="reserved"> amount</span>
+<span class="variable">amount</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">                </span>
-<span class="reserved"> Console</span>
+<span class="variable">Console</span>
 <span class="delimiter">.</span>
-<span class="reserved"> WriteLine</span>
+<span class="variable">WriteLine</span>
 <span class="delimiter">(</span>
-<span class="reserved"></span>
 <span class="string">"Deposit of {amount:C} successful. New balance: {balance:C}"</span>
 <span class="delimiter">) ;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">}</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
-<span class="reserved">else </span>
+<span class="reserved">else</span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">                </span>
-<span class="reserved"> Console</span>
+<span class="variable">Console</span>
 <span class="delimiter">.</span>
-<span class="reserved"> WriteLine</span>
+<span class="variable">WriteLine</span>
 <span class="delimiter">(</span>
 <span class="string">"Invalid deposit amount."</span>
 <span class="delimiter">) ;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">}</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="delimiter">}</span>
-<span class="reserved"></span>
 <br>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="reserved">public</span>
 <span class="space"> </span>
 <span class="reserved">void</span>
 <span class="space"> </span>
-<span class="reserved"> Withdraw</span>
+<span class="variable">Withdraw</span>
 <span class="delimiter">(</span>
 <span class="reserved">double</span>
 <span class="space"> </span>
-<span class="reserved"> amount</span>
+<span class="variable">amount</span>
 <span class="delimiter">)</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="reserved">if</span>
 <span class="space"> </span>
 <span class="delimiter">(</span>
-<span class="reserved"> amount</span>
+<span class="variable">amount</span>
 <span class="space"> </span>
 <span class="delimiter">></span>
 <span class="space"> </span>
 <span class="int">0</span>
-<span class="space"> </span>
-<span class="reserved"> </span>
-<span class="space"> </span>
-<span class="reserved"> amount</span>
+<span class="space">   </span>
+<span class="variable">amount</span>
 <span class="space"> </span>
 <span class="delimiter"><</span>
-<span class="reserved"> =</span>
+<span class="operator">=</span>
 <span class="space"> </span>
-<span class="reserved"> balance</span>
+<span class="variable">balance</span>
 <span class="delimiter">)</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">                </span>
-<span class="reserved"> balance</span>
+<span class="variable">balance</span>
 <span class="space"> </span>
-<span class="reserved"> -  =</span>
+<span class="operator">- =</span>
 <span class="space"> </span>
-<span class="reserved"> amount</span>
+<span class="variable">amount</span>
 <span class="delimiter">;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">                </span>
-<span class="reserved"> Console</span>
+<span class="variable">Console</span>
 <span class="delimiter">.</span>
-<span class="reserved"> WriteLine</span>
+<span class="variable">WriteLine</span>
 <span class="delimiter">(</span>
-<span class="reserved"></span>
 <span class="string">"Withdrawal of {amount:C} successful. New balance: {balance:C}"</span>
 <span class="delimiter">) ;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">}</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
-<span class="reserved">else </span>
+<span class="reserved">else</span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">                </span>
-<span class="reserved"> Console</span>
+<span class="variable">Console</span>
 <span class="delimiter">.</span>
-<span class="reserved"> WriteLine</span>
+<span class="variable">WriteLine</span>
 <span class="delimiter">(</span>
 <span class="string">"Invalid withdrawal amount or insufficient funds."</span>
 <span class="delimiter">) ;</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
 <span class="delimiter">}</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="delimiter">}</span>
-<span class="reserved"></span>
 <br>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="reserved">public</span>
 <span class="space"> </span>
 <span class="reserved">void</span>
 <span class="space"> </span>
-<span class="reserved"> DisplayAccountInfo</span>
+<span class="variable">DisplayAccountInfo</span>
 <span class="delimiter">( )</span>
-<span class="reserved"></span>
 <br>
 <span class="space">        </span>
 <span class="delimiter">{</span>
-<span class="reserved"></span>
 <br>
 <span class="space">            </span>
-<span class="reserved"> Console</span>
+<span class="variable">Console</span>
 <span class="delimiter">.</span>
-<span class="reserved"> WriteLine</span>
+<span class="variable">WriteLine</span>
 <span class="delimiter">(</span>
-<span class="reserved"></span>
 <span class="string">"Account number: {accountNumber}"</span>
 <span class="delimiter">) ;</span>
-<span class="reserved"></span>
-<br>
-<span class="space">            </span>
-<span class="reserved"> Console</span>
-<span class="delimiter">.</span>
-<span class="reserved"> WriteLine</span>
-<span class="delimiter">(</span>
-<span class="reserved"></span>
-<span class="string">"Account holder: {accountHolder}"</span>
-<span class="delimiter">) ;</span>
-<span class="reserved"></span>
-<br>
-<span class="space">            </span>
-<span class="reserved"> Console</span>
-<span class="delimiter">.</span>
-<span class="reserved"> WriteLine</span>
-<span class="delimiter">(</span>
-<span class="reserved"></span>
-<span class="string">"Current balance: {balance:C}"</span>
-<span class="delimiter">) ;</span>
-<span class="reserved"></span>
-<br>
-<span class="space">        </span>
-<span class="delimiter">}</span>
-<span class="reserved"></span>
-<br>
-<span class="space">    </span>
-<span class="delimiter">}</span>
-<span class="reserved"></span>
-<br>
-<span class="reserved"></span>
-<br>
-<span class="space">    </span>
-<span class="reserved">class</span>
-<span class="space"> </span>
-<span class="reserved"> Program </span>
-<br>
-<span class="space">    </span>
-<span class="delimiter">{</span>
-<span class="reserved"></span>
-<br>
-<span class="space">        </span>
-<span class="reserved">static</span>
-<span class="space"> </span>
-<span class="reserved">void</span>
-<span class="space"> </span>
-<span class="reserved"> Main</span>
-<span class="delimiter">(</span>
-<span class="reserved">string</span>
-<span class="delimiter">[ ]</span>
-<span class="space"> </span>
-<span class="reserved"> args</span>
-<span class="delimiter">)</span>
-<span class="reserved"></span>
-<br>
-<span class="space">        </span>
-<span class="delimiter">{</span>
-<span class="reserved"></span>
-<br>
-<span class="space">            </span>
-<span class="reserved"> BankAccount</span>
-<span class="space"> </span>
-<span class="reserved"> account</span>
-<span class="space"> </span>
-<span class="reserved"> =</span>
-<span class="space"> </span>
-<span class="reserved">new</span>
-<span class="space"> </span>
-<span class="reserved"> BankAccount</span>
-<span class="delimiter">(</span>
-<span class="string">"1234567890", "John Smith"</span>
-<span class="delimiter">,</span>
-<span class="space"> </span>
-<span class="float">1000.0</span>
-<span class="delimiter">) ;</span>
-<span class="reserved"></span>
-<br>
-<span class="space">            </span>
-<span class="reserved"> account</span>
-<span class="delimiter">.</span>
-<span class="reserved"> DisplayAccountInfo</span>
-<span class="delimiter">( ) ;</span>
-<span class="reserved"></span>
-<br>
-<span class="space">            </span>
-<span class="reserved"> account</span>
