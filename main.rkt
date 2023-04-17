@@ -116,7 +116,39 @@
      
 
 (define (main file-list)
-  (displayln "<!DOCTYPE html> <html> <head><link rel='stylesheet' href='./colors.css' type='text/css' /></head><body>" output)
+  (displayln "<!DOCTYPE html> <html> <head><link rel='stylesheet' href='./colors.css' type='text/css' /></head><body><style>
+    body{
+    background-color:#000000;
+    }
+    .string{
+    color: #CB1717;
+    }
+    .float{
+    color: #C61BF0;
+    }
+    .operator{
+    color: #FFFF99;
+    font-weight: 900;
+    }
+    .variable{
+    color: #4AAB84;
+    }
+    .delimiter{
+    color: #86e7ff;
+    }
+    .comment{
+    color: #486633;
+    }
+    .undefinded{
+    color:#9E9E9E;
+    }
+    .reserved{
+    color: #fe53fb;
+    }
+    .int{
+    color: #30F01B;
+    }
+  </style>" output)
   (for ([line file-list])
     (displayln line)
     (transform-html line)
@@ -126,5 +158,3 @@
 
 
 (main (map pack(clasify-code-by-line (code->lines code))))
-
-
