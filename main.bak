@@ -83,7 +83,6 @@
 ;;define code as a constant
 (define code (apply string (file->list-of-chars input-file)))
 
-;;define output
 (define output (open-output-file "index.html"))
 
 ;;highlights with a class in a html span each word
